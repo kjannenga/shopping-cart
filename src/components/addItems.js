@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 class AddItems extends Component {
-    state = {};
+    state = { product: 'Mediocre Iron Watch'};
 
     onSubmit = (e) => {
         e.preventDefault();
@@ -34,7 +34,7 @@ class AddItems extends Component {
                     <div className='form-group'>
                         <label htmlFor="product">Products</label>
                         <br/>
-                        <select name='product' value={this.state.product} onChange={(e) => this.setState({ product: e.target.value })}>
+                        <select name='product' onChange={(e) => this.setState({ product: e.target.value })} >
                             {productList}
                         </select>
                     </div>
