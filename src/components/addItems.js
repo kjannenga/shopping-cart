@@ -29,7 +29,7 @@ class AddItems extends Component {
                     <div className='form-group'>
                         <label htmlFor="quantity">Quantity</label>
                         <br/>
-                        <input type="number" name="quantity" min='0' required onChange={(e) => this.setState({quantity: e.target.value})}/>
+                        <input type="number" name="quantity" min='1' required onChange={(e) => this.setState({quantity: e.target.value})}/>
                     </div>
                     <div className='form-group'>
                         <label htmlFor="product">Products</label>
