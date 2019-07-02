@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 
 class AddItems extends Component {
-    state = { product: 'Mediocre Iron Watch'};
+    state = { product: this.props.products[0].name};
+
 
     onSubmit = (e) => {
         e.preventDefault();
